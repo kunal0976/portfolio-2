@@ -2,7 +2,14 @@
     let header = document.querySelector('header');
     let menu = document.querySelector('#menu-icon');
     let navbar = document.querySelector('.navbar');
-     
+     /* ----- TYPING EFFECT ----- */
+var typingEffect = new Typed(".typedText",{
+  strings : ["Designer"],
+  loop : true,
+  typeSpeed : 100, 
+  backSpeed : 80,
+  backDelay : 2000
+})
      
     window.addEventListener('scroll', () => {
         header.classList.toggle('shadow', window.scrollY > 0);
